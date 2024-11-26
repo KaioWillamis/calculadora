@@ -17,7 +17,7 @@ body{
 .calculadora{
     width: 400px;
     height: 600px;
-    background-color: rgb(200, 200, 200);
+    background-color: #262b4a;
     padding: 5px;
 }
 
@@ -27,13 +27,13 @@ body{
     justify-content: right;
     width: 100%;
     height: 20%;
-    background-color: rgb(98, 98, 98);
+    background-color: #343957;
 }
 
 .calculadora .resultado p{
-    color: white;
-    font-size: 3em;
-    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-size: 3.5em;
+    font-weight: 500;
     padding: 5px;
 }
 
@@ -49,12 +49,40 @@ body{
     cursor: pointer;
     font-size: 1.8em;
     font-weight: 500;
+    background-color: #3a3f5d;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.calculadora .buttons button:hover{
+    background-color: #33374f;
+    box-shadow: 0 0 8px 2px rgba(161, 161, 161, 0.168);
 }
 
 .calculadora .buttons .red{
     color: red;
+    background-color: #50526e;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.calculadora .buttons .red:hover{
+    background-color: #44465e;
+    box-shadow: 0 0 8px 2px rgba(161, 161, 161, 0.168);
 }
 
 .calculadora .buttons .zero{
     grid-column: span 2;
+}
+
+.calculadora .buttons .igual{
+    background-color: #fc3764;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.calculadora .buttons .igual:hover{
+    background-color: #e2335c;
+    box-shadow: 0 0 8px 2px rgba(161, 161, 161, 0.168);
 }

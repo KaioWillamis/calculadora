@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <script></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="calculadora">
         <div class="resultado">
-            <p>resultado</p>
+            <p class="numero"></p>
         </div>
         <div class="buttons">
-            <button class="red">C</button>
-            <button class="red">^</button>
-            <button class="red">%</button>
-            <button class="red">/</button>
+            <button class="red" onclick="limpar()">C</button>
+            <button class="red" onclick="back()">^</button>
+            <button class="red" onclick="insert('%')">%</button>
+            <button class="red" onclick="insert('/')">/</button>
 
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="red">-</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button class="red" onclick="insert('-')">-</button>
 
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="red">+</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button class="red" onclick="insert('+')">+</button>
 
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="red">x</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button class="red" onclick="insert('*')">*</button>
 
-            <button class="zero">0</button>
-            <button>.</button>
-            <button>=</button>
+            <button class="zero" onclick="insert('0')">0</button>
+            <button onclick="insert('.')">.</button>
+            <button class="igual" onclick="calcular()">=</button>
         </div>
     </div>
 </body>
