@@ -86,3 +86,8 @@ body{
     background-color: #e2335c;
     box-shadow: 0 0 8px 2px rgba(161, 161, 161, 0.168);
 }
+
+.calculadora .buttons button img{
+    width: 50%;
+    height: 50%;
+}
